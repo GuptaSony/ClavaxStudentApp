@@ -1,0 +1,26 @@
+{
+	"student": [
+		{
+			"id": 1,
+			"student_name": "Sony Gupta",
+			"father_name": "Sukhdev Gupta",
+			"dob": "19/03/1998",
+			"address": "Pakardar Post Mahson District Basti(UP)",
+			"city": "Basti",
+			"state": "Uttar Pradesh",
+			"pin": "272124",
+			"phone_no": "7355628768",
+			"email": "guptasony9119@gmail.com",
+			"class": [
+				5,
+				6,
+				7,
+				8,
+				9,
+				10
+			],
+			"marks": "",
+			"date": ""
+		}
+	]
+}
