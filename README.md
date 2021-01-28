@@ -1,5 +1,12 @@
 # Clavaxproject
 
+Run Json DataBase using command 
+1- `npm install -g json-server`
+2- `json-server --watch db.json`
+
+it will run API Server and then only application data will display
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
 
 ## Development server
