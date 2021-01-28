@@ -1,0 +1,131 @@
+<form #f="ngForm" (ngSubmit)="f.form.valid && saveStudentData()">
+	<div class="modal-header">
+		<h4 *ngIf="disableflag" class="modal-title">Student Details</h4>
+		<h4 *ngIf="disableAddflag" class="modal-title">Student Add</h4>
+		<h4 *ngIf="disablEditeflag" class="modal-title">Student Edit</h4>
+		<button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+	<div class="modal-body">
+		<div class="row">
+			<div class="col-md-10 mx-auto">
+				<input type="hidden" name="id" [(ngModel)]=studentdetails.id />
+				<div class="form-group row">
+					<div class="col-sm-6">
+						<label for="inputStudentname">Student Name</label>
+						<input type="text" class="form-control" id="inputStudentname" name="inputStudentname"
+							placeholder="Student name" [disabled]='disableflag'
+							[(ngModel)]='studentdetails.student_name' #inputStudentname="ngModel"
+							[ngClass]="{ 'is-invalid': f.submitted && inputStudentname.invalid }" required>
+
+						<div *ngIf="f.submitted && inputStudentname.invalid" class="invalid-feedback">
+							<div *ngIf="inputStudentname.errors.required">First Name is required</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<label for="inputFathername">Father'S Name</label>
+						<input type="text" class="form-control" id="inputFathername" name="inputFathername"
+							placeholder="Father's name" [disabled]='disableflag'
+							[(ngModel)]='studentdetails.father_name' #inputFathername="ngModel"
+							[ngClass]="{ 'is-invalid': f.submitted && inputFathername.invalid }" required>
+
+						<div *ngIf="f.submitted && inputFathername.invalid" class="invalid-feedback">
+							<div *ngIf="inputFathername.errors.required">Father's Name is required</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-sm-6">
+						<label for="dob">DOB</label>
+						<input type="text" class="form-control" id="dob" name="dob" placeholder="DOB"
+							[disabled]='disableflag' [(ngModel)]='studentdetails.dob' #dob="ngModel"
+							[ngClass]="{ 'is-invalid': f.submitted && dob.invalid }" required minlength='10'>
+
+						<div *ngIf="f.submitted && dob.invalid" class="invalid-feedback">
+							<div *ngIf="dob.errors.required">DOB is required</div>
+							<div *ngIf="dob.errors.minlength">DOB at least 10</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<label for="inputDate">Date</label>
+						<input type="text" class="form-control" id="inputDate" placeholder="Date" name="inputDate"
+							[disabled]='disableflag' [(ngModel)]='studentdetails.date' required>
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-sm-6">
+						<label for="inputContactNumber">Contact Number</label>
+						<input type="number" class="form-control" id="inputContactNumber" name="inputContactNumber"
+							required minlength="10" maxlength="10" placeholder="Contact Number" [disabled]='disableflag'
+							[(ngModel)]='studentdetails.phone_no' #inputContactNumber="ngModel"
+							[ngClass]="{ 'is-invalid': f.submitted && inputContactNumber.invalid }">
+
+						<div *ngIf="f.submitted && inputContactNumber.invalid" class="invalid-feedback">
+							<div *ngIf="inputContactNumber.errors.required">Contact Number is required</div>
+							<div *ngIf="inputContactNumber.errors.Phone">Contact Number at least 10</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<label for="inputEmail">Email</label>
+						<input type="text" class="form-control" id="inputEmail" name="inputEmail" placeholder="Email"
+							[disabled]='disableflag' [(ngModel)]='studentdetails.email' #email="ngModel"
+							[ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email>
+						<div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+							<div *ngIf="email.errors.required">Email is required</div>
+							<div *ngIf="email.errors.email">Email must be a valid email address</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-sm-6">
+						<label for="inputClass">Class</label>
+						<input type="number" class="form-control" id="inputClass" name="inputClass" placeholder="Class"
+							[disabled]='disableflag' [(ngModel)]='studentdetails.class'>
+					</div>
+					<div class="col-sm-6">
+						<label for="inputMarks">Marks %</label>
+						<input type="number" class="form-control" id="inputMarks" name="inputMarks" placeholder="Marks"
+							[disabled]='disableflag' [(ngModel)]='studentdetails.marks'>
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-sm-12">
+						<label for="address">Address</label>
+						<textarea name="Text1" cols="40" rows="2" class="form-control" id="address" name="address"
+							placeholder="Street Address" [disabled]='disableflag'
+							[(ngModel)]='studentdetails.address'></textarea>
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-sm-6">
+						<label for="inputCity">City</label>
+						<input type="text" class="form-control" id="inputCity" name="inputCity" placeholder="City"
+							[disabled]='disableflag' [(ngModel)]='studentdetails.city'>
+					</div>
+					<div class="col-sm-3">
+						<label for="inputState">State</label>
+						<input type="text" class="form-control" id="inputState" name="inputState" placeholder="State"
+							[disabled]='disableflag' [(ngModel)]='studentdetails.state'>
+					</div>
+					<div class="col-sm-3">
+						<label for="inputPostalCode">Postal Code</label>
+						<input type="text" class="form-control" id="inputPostalCode" name="inputPostalCode"
+							placeholder="Postal Code" [disabled]='disableflag' [(ngModel)]='studentdetails.pin'  #inputPostalCode="ngModel"
+							[ngClass]="{ 'is-invalid': f.submitted && inputPostalCode.invalid }" required>
+
+						<div *ngIf="f.submitted && inputPostalCode.invalid" class="invalid-feedback">
+							<div *ngIf="inputPostalCode.errors.required">Pin Number is required</div>
+							<div *ngIf="inputPostalCode.errors.minlength">Pin Number must be 6 digit</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="modal-footer">
+		<button type="submit" *ngIf="!disableflag" class="btn btn-primary px-4 float-right">Save</button>
+		<button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+	</div>
+</form>

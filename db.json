@@ -1,26 +1,108 @@
 {
-	"student": [
-		{
-			"id": 1,
-			"student_name": "Sony Gupta",
-			"father_name": "Sukhdev Gupta",
-			"dob": "19/03/1998",
-			"address": "Pakardar Post Mahson District Basti(UP)",
-			"city": "Basti",
-			"state": "Uttar Pradesh",
-			"pin": "272124",
-			"phone_no": "7355628768",
-			"email": "guptasony9119@gmail.com",
-			"class": [
-				5,
-				6,
-				7,
-				8,
-				9,
-				10
-			],
-			"marks": "",
-			"date": ""
-		}
-	]
+  "student": [
+    {
+      "id": 1,
+      "student_name": "Sony Gupta",
+      "father_name": "Sukhdev Gupta",
+      "dob": "19/03/1998",
+      "address": "Pakardar Post Mahson District Basti(UP)",
+      "city": "Basti",
+      "state": "Uttar Pradesh",
+      "pin": "272124",
+      "phone_no": 7355628768,
+      "email": "sonyg4517@gmail.com",
+      "class": "10",
+      "marks": "80",
+      "date": "2021/01/28"
+    },
+    {
+      "student_name": "kapil",
+      "father_name": "shiv narayan",
+      "dob": "19-Mar-1998",
+      "date": "28-01-2021",
+      "email": "sdknkfjd@gmail.com",
+      "address": "Pakardar Post-Mahson District-Basti(UP)",
+      "city": "Basti",
+      "state": "Uttar Pradesh",
+      "pin": "272124",
+      "phone_no": 3486823682,
+      "class": 5,
+      "marks": 70,
+      "id": 2
+    },
+    {
+      "student_name": "shivam",
+      "father_name": "aditya nath",
+      "dob": "20-10-1998",
+      "date": "28-01-2021",
+      "phone_no": 342353533,
+      "email": "gdfghth@gmail.com",
+      "address": "Pakafgdrgistrict-Basti(UP)",
+      "city": "Basti",
+      "state": "Uttar Pradesh",
+      "pin": "272124",
+      "class": 8,
+      "marks": 98,
+      "id": 3
+    },
+    {
+      "student_name": "amita",
+      "father_name": "ram singh",
+      "dob": "20-10-1998",
+      "date": "28-01-2021",
+      "phone_no": 3486823682,
+      "email": "sdknkfjd@gmail.com",
+      "address": "Pakardar Post-Mahson District-Basti(UP)",
+      "city": "Basti",
+      "state": "Uttar Pradesh",
+      "pin": "272124",
+      "class": 6,
+      "marks": 78,
+      "id": 4
+    },
+    {
+      "student_name": "amit kumar",
+      "father_name": "ram singh",
+      "dob": "20-10-1998",
+      "date": "28-01-2021",
+      "phone_no": 3486823682,
+      "email": "sdknkfjd@gmail.com",
+      "address": "Pakardar Post-Mahson District-Basti(UP)",
+      "city": "Basti",
+      "state": "Uttar Pradesh",
+      "pin": "272124",
+      "class": 6,
+      "marks": 78,
+      "id": 5
+    },
+    {
+      "student_name": "aman",
+      "father_name": "amrendra singh",
+      "dob": "19-Mar-1998",
+      "date": "28-01-2021",
+      "email": "sonyg4517@gmail.com",
+      "address": "Pakardar Post-Mahson District-Basti(UP)",
+      "city": "Basti",
+      "state": "Uttar Pradesh",
+      "pin": "272124",
+      "id": 6,
+      "class": 6,
+      "marks": 80,
+      "phone_no": 32543547588
+    },
+    {
+      "student_name": "rachna",
+      "father_name": "raj",
+      "dob": "19/03/1998",
+      "date": "28-01-2021",
+      "email": "sonyg4517@gmail.com",
+      "address": "Pakardar Post-Mahson District-Basti(UP)",
+      "city": "Basti",
+      "state": "Uttar Pradesh",
+      "pin": "272124",
+      "class": 6,
+      "marks": 50,
+      "id": 7
+    }
+  ]
 }
